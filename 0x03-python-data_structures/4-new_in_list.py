@@ -8,4 +8,4 @@ def new_in_list(my_list, idx, element):
     for i in my_list:
         if i == idx:
             cpy[i] = element
-            return cpy
+    return cpy

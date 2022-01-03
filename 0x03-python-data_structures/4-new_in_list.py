@@ -5,7 +5,5 @@ def new_in_list(my_list, idx, element):
         return cpy
     if idx > len(my_list) - 1:
         return cpy
-    for i in my_list:
-        if i == idx:
-            cpy[idx] = element
+    cpy[idx] = element
     return cpy

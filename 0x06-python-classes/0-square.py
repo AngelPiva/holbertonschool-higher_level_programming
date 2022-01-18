@@ -6,4 +6,9 @@ empty class
 """
 
 class Square:
+    """Square class
+
+    empty class
+
+    """
     pass

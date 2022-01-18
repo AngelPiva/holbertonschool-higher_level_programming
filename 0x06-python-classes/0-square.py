@@ -4,7 +4,6 @@ Square class
 """
 
 
-
 class Square:
     """description
 

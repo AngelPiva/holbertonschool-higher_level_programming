@@ -2,7 +2,12 @@
 """
 Square class
 """
+
+
+
 class Square:
-    """empty class
+    """description
+
+    empty class
     """
     pass

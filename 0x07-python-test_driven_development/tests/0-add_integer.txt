@@ -6,7 +6,6 @@ Using ``add_integer``
 import module:
 ==============
 >>> add_integer = __import__('0-add_integer').add_integer
->>> import sys
 
 test 1:
 >>> add_integer(3, 1)

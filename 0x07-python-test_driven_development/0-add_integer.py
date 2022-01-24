@@ -1,7 +1,9 @@
 #!/usr/bin/python3
-""" module to add two numbers 
+""" module to add two numbers
 a and b can be integers or floats
 """
+
+
 def add_integer(a, b=98):
     """ funtion that adds two integeres and return the sum """
     if type(a) is not int and type(a) is not float:

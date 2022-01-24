@@ -2,6 +2,8 @@
 """
 module that prints a square with size size
 """
+
+
 def print_square(size):
     """ function that prints a square with size size """
     if type(size) is not int:

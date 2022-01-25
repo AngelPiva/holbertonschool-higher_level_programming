@@ -1,3 +1,9 @@
 #!/usr/bin/python3
+"""
+module that defines a class lockedClass
+"""
+
+
 class LockedClass(object):
-    __slots__ = "first_name"
+    """ class lockedClass """
+    __slots__ = 'first_name'

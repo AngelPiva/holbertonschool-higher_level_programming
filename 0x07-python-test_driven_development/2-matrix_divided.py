@@ -5,6 +5,7 @@ matrix_divide module
 
 
 def matrix_divided(matrix, div):
+    """ divides all elements of a matrix """
     new_matrix = []
     exception1 = "matrix must be a matrix (list of lists) of integers/floats"
     div_req(div)
@@ -26,6 +27,7 @@ def matrix_divided(matrix, div):
 
 
 def div_req(div):
+    """ divide requirements """
     if div == 0:
         raise ZeroDivisionError("division by zero")
     if type(div) is not int and type(div) is not float:

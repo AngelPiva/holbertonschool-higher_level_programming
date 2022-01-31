@@ -1,0 +1,69 @@
+import module:
+>>> MyList = __import__('1-my_list').MyList
+
+tests:
+
+test 1:
+>>> my_list = MyList()
+>>> my_list.append(1)
+>>> my_list.append(4)
+>>> my_list.append(2)
+>>> my_list.append(3)
+>>> my_list.append(5)
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+>>> my_list.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> print(my_list)
+[1, 4, 2, 3, 5]
+
+test 2:
+>>> my_list2 = MyList()
+>>> print(my_list2)
+[]
+
+test 3:
+>>> my_list3 = {1: 2, 3: 4, 5: 6}
+>>> print(my_list3)
+{1: 2, 3: 4, 5: 6}
+>>> my_list3.print_sorted()
+Traceback (most recent call last):
+	...
+AttributeError: 'dict' object has no attribute 'print_sorted'
+
+>>> print(my_list3)
+{1: 2, 3: 4, 5: 6}
+
+test 4:
+>>> my_list4 = MyList()
+>>> my_list4.append(-1)
+>>> my_list4.append(-4)
+>>> my_list4.append(-2)
+>>> my_list4.append(-3)
+>>> my_list4.append(-5)
+>>> print(my_list4)
+[-1, -4, -2, -3, -5]
+
+>>> my_list4.print_sorted()
+[-5, -4, -3, -2, -1]
+
+>>> print(my_list4)
+[-1, -4, -2, -3, -5]
+
+test 5:
+>>> my_list5 = MyList()
+>>> my_list5.append(1)
+>>> my_list5.append(2)
+>>> my_list5.append(3)
+>>> my_list5.append(4)
+>>> my_list5.append(5)
+>>> print(my_list5)
+[1, 2, 3, 4, 5]
+
+>>> my_list5.print_sorted()
+[1, 2, 3, 4, 5]
+
+>>> print(my_list5)
+[1, 2, 3, 4, 5]

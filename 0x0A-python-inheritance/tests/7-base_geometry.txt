@@ -83,7 +83,7 @@ test 12:
 
 test 13:
 >>> try:
-...     bg.integer_validator("name", 584e93493943)
+...     bg.integer_validator("name", object)
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] name must be an integer

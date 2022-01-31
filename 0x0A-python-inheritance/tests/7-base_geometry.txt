@@ -80,3 +80,10 @@ test 12:
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] name must be an integer
+
+test 13:
+>>> try:
+...     bg.integer_validator("name", 584e93493943)
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[TypeError] name must be an integer

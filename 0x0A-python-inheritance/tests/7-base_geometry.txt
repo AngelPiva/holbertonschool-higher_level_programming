@@ -83,7 +83,14 @@ test 12:
 
 test 13:
 >>> try:
-...     bg.integer_validator("name", object)
+...     bg.add_integer(4, 5)
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
-[TypeError] name must be an integer
+[AttributeError] 'BaseGeometry' object has no attribute 'add_integer'
+
+test 14:
+>>> try:
+...     bg.area()
+... except Exception as e:
+...     print("[{}] {}".format(e.__class__.__name__, e))
+[Exception] area() is not implemented

@@ -21,5 +21,5 @@ class Student:
                     return self.__dict__
                 if elem in self.__dict__:
                     attr_cont[elem] = self.__dict__[elem]
-            return attr_cont 
+            return attr_cont
         return self.__dict__

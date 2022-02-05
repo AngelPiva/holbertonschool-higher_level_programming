@@ -91,8 +91,13 @@ class Rectangle(Base):
         return "[Rectangle] ({}) {}/{} - {}/{}".format(
                 self.id, self.x, self.y, self.width, self.height)
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """ assigns an argument to each attribute """
         attrs = ["id", "width", "height", "x", "y"]
-        for i in range(len(args)):
-            setattr(self, attrs[i], args[i])
+        if args:
+            for i in range(len(args)):
+                setattr(self, attrs[i], args[i])
+        else:
+            for k, v in kwargs.items():
+                if k in attrs:
+                    setattr(self, k, v)

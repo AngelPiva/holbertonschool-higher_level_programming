@@ -38,3 +38,10 @@ class Base:
                 json.append(items.to_dictionary())
 
             return op.write(cls.to_json_string(json))
+
+    @staticmethod
+    def from_json_string(json_string):
+        """ returns the list of the JSON string representation json_string """
+        if json_string is None:
+            return []
+        return json.loads(json_string)

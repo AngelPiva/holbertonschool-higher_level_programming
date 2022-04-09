@@ -18,6 +18,4 @@ if __name__ == '__main__':
     for elem in session.query(State):
         if "a" in elem.name:
             session.delete(elem)
-
     session.commit()
-    session.close()

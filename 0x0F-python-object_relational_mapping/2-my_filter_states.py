@@ -17,5 +17,5 @@ if __name__ == '__main__':
     elems = cursor.fetchall()
 
     for elem in elems:
-            print(elem)
+        print(elem)
     con_datab.close()

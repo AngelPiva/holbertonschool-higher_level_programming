@@ -19,4 +19,4 @@ if __name__ == '__main__':
     if elems is not None:
         for elem in elems:
             print(elem)
-        con_datab.close()
+    con_datab.close()

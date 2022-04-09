@@ -14,9 +14,10 @@ if __name__ == '__main__':
                                 password=argv[2], port=3306, database=argv[3])
     cursor = con_datab.cursor()
     cursor.execute("SELECT * FROM states \
-                    WHERE name LIKE 'N%' \
                     ORDER BY states.id ASC;")
     elems = cursor.fetchall()
 
     for elem in elems:
-        print(elem)
+        if elem[1][0] == 'N':
+            print(elem)
+    con_datab.close()

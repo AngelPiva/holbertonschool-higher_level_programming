@@ -16,6 +16,7 @@ if __name__ == '__main__':
                     ORDER BY states.id ASC;".format(argv[4]))
     elems = cursor.fetchall()
 
-    for elem in elems:
-        print(elem)
-    con_datab.close()
+    if elems is not None:
+        for elem in elems:
+            print(elem)
+        con_datab.close()

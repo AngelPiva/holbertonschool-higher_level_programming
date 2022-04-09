@@ -15,6 +15,7 @@ if __name__ == '__main__':
     Session = sessionmaker(bind=engine)
     session = Session()
 
+    boolean = False
     for elem in session.query(State):
         if elem.name == argv[4]:
             boolean = True

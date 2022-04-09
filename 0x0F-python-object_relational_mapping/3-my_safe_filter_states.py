@@ -12,7 +12,7 @@ if __name__ == '__main__':
                                 password=argv[2], port=3306, database=argv[3])
     cursor = con_datab.cursor()
     cursor.execute("SELECT * FROM states \
-                    WHERE name LIKE '{}' \
+                    WHERE name LIKE BINARY '{}' \
                     ORDER BY states.id ASC;".format(argv[4]))
     elems = cursor.fetchall()
 

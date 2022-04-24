@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """ 2. POST an email #0 """
 from sys import argv
-import urllib
+import urllib.request
+import urllib.parse
 
 
 if __name__ == "__main__":

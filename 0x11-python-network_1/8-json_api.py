@@ -10,8 +10,8 @@ if __name__ == "__main__":
     else:
         q = ""
     r = requests.post("http://0.0.0.0:5000/search_user", data={"q": q})
-    resp = r.json()
     try:
+        resp = r.json()
         if resp:
             print("[{}] {}".format(resp["id"], resp["name"]))
         else:

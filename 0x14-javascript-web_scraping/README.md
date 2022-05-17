@@ -1,6 +1,6 @@
 # 0x14. JavaScript - Web scraping
 
-## Task 0 . Readme
+## Task 0. Readme
 Write a script that reads and prints the content of a file.
 - The first argument is the file path
 - The content of the file must be read in utf-8

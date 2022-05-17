@@ -1,8 +1,8 @@
 #!/usr/bin/node
 
-const request = require('request');
+const file = require('file');
 
-request.Readfile (process.argv[2], 'utf-8', function (error, content) {
+file.Readfile (process.argv[2], 'utf-8', function (error, content) {
  if (error) {
   console.log(error);
  } else {

@@ -3,9 +3,9 @@
 const url = 'https://swapi-api.hbtn.io/api/films/' + process.argv[2];
 const axios = require('axios');
 
-async function printChars () {
+async function printchars () {
   const response = await axios.get(url);
-  const chars = response.data['characters'];
+  const chars = response.data.characters;
   for (let c = 0; c < chars.length; c++) {
     const ch = chars[c];
     await axios.get(ch)
@@ -15,4 +15,4 @@ async function printChars () {
   }
 }
 
-printChars();
+printchars();

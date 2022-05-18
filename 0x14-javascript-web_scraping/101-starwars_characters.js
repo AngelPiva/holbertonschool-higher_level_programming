@@ -5,7 +5,7 @@ const axios = require('axios');
 
 async function printChars () {
   const response = await axios.get(url);
-  const chars = response.data.results.characters;
+  const chars = response.data['characters'];
   for (let c = 0; c < chars.length; c++) {
     const ch = chars[c];
     await axios.get(ch)
